@@ -1,4 +1,4 @@
-# Pinpint性能监控利器
+# Pinpoint性能监控利器
 
 ## 官方主页：https://github.com/naver/pinpoint
 
