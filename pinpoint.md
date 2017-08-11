@@ -13,7 +13,6 @@
 
  - hbase：持久化层。
 
-
 ## hbase初始化
 
 - 下载包：<http://mirror.bit.edu.cn/apache/hbase/1.1.11/hbase-1.1.11-bin.tar.gz>
@@ -21,13 +20,13 @@
 
 - install hbase
 
- - 指定JDK路径：
- - `vi hbase-config.sh +27` 
- - `JAVA_HOME="/data/packages/jdk1.8.0_60"`
-
- - `./start-hbase.sh`
-
-- hbase默认端口TCP16010 
+ - 指定JDK路径:
+``` bash
+vi hbase-config.sh +27
+JAVA_HOME="/data/packages/jdk1.8.0_60"
+./start-hbase.sh
+```
+    - hbase默认TcpPort:16010 
 
 
 ## import tables
