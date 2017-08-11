@@ -21,7 +21,7 @@
 - install hbase
 
  ``` bash
-`vi hbase-config.sh +27
+vi hbase-config.sh +27
 JAVA_HOME="/data/packages/jdk1.8.0_60"
 ./start-hbase.sh
 ```
@@ -37,7 +37,7 @@ JAVA_HOME="/data/packages/jdk1.8.0_60"
  - `./hbase shell`
 
  - 复制SQL执行完
- - 登录: <http://172.16.51.7:16010/master-status>
+ - 登录: <http://172.16.1.1:16010/master-status>
 
 ## Hbase表优化
 - 修改hbase表的存储时间，建表的默认TTL时间比较长，需要比较大的磁盘空间，我们可以修改一下 默认的TTL时间
@@ -67,18 +67,18 @@ JAVA_HOME="/data/packages/jdk1.8.0_60"
 
 ### pinpoint agent
  - 编辑配置文件: `vi /data/pinpoint-agent/pinpoint.config`
- - `profiler.collector.ip=172.16.51.7`
+ - `profiler.collector.ip=172.16.1.1`
 
 - 添加tomcat服务启动脚本catalina.sh
 ``` bash
 CATALINA_OPTS="$CATALINA_OPTS -javaagent:/data/pinpoint-agent/pinpoint-bootstrap-1.6.2.jar"
-CATALINA_OPTS="$CATALINA_OPTS -Dpinpoint.agentId=jdapp20170810"
-CATALINA_OPTS="$CATALINA_OPTS -Dpinpoint.applicationName=jdapp
+CATALINA_OPTS="$CATALINA_OPTS -Dpinpoint.agentId=app-0810"
+CATALINA_OPTS="$CATALINA_OPTS -Dpinpoint.applicationName=app
 ```
 
 - 查看pinpoint进程 `ps -ef |grep pinpoint`
 ``` bash 
 -javaagent:/data/pinpoint-agent/pinpoint-bootstrap-1.6.2.jar 
--Dpinpoint.agentId=jdapp20170810 
--Dpinpoint.applicationName=jdapp
+-Dpinpoint.agentId=app-0810 
+-Dpinpoint.applicationName=app
 ```
