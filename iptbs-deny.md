@@ -1,3 +1,9 @@
+# iptables限制HOST访问其它主机权限
+
+## 项目背景
+- 内网主机暴露在公网，给外包人员访问，通过此策略隔离与内网其它主机权限，保障内网安全性。
+
+``` bash
 :INPUT DROP [0:0]
 :FORWARD DROP [0:0]
 :OUTPUT DROP [0:0]
@@ -25,3 +31,4 @@
 -A INPUT -j REJECT --reject-with icmp-host-prohibited
 -A FORWARD -j REJECT --reject-with icmp-host-prohibited
 COMMIT
+```
