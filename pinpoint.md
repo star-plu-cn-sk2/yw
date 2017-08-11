@@ -13,7 +13,7 @@
 
  - hbase：持久化层。
 
-## hbase初始化
+## Hbase初始化
 
 - 下载包：<http://mirror.bit.edu.cn/apache/hbase/1.1.11/hbase-1.1.11-bin.tar.gz>
 - 安装手册：<http://abloz.com/hbase/book.html#quickstart>
@@ -26,10 +26,10 @@
 JAVA_HOME="/data/packages/jdk1.8.0_60"
 ./start-hbase.sh
 ```
-     - hbase默认TcpPort:16010 
+  - hbase Port:16010 
 
 
-## import tables
+## Import tables
 
 - hbase-create.hbase #从官网获取
 
@@ -46,7 +46,7 @@ JAVA_HOME="/data/packages/jdk1.8.0_60"
 可以看到 TTL => '604800 SECONDS (7 DAYS)。
 
 
-## pinpoint
+## Pinpoint官网文档
 
 - `https://github.com/naver/pinpoint/blob/1.6.x/doc/installation.md`
 - `https://github.com/naver/pinpoint/releases/tag/1.6.2`
