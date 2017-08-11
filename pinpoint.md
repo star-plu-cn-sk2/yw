@@ -20,7 +20,6 @@
 
 - install hbase
 
- - 指定JDK路径:
  ``` bash
 `vi hbase-config.sh +27
 JAVA_HOME="/data/packages/jdk1.8.0_60"
@@ -52,13 +51,12 @@ JAVA_HOME="/data/packages/jdk1.8.0_60"
 - `https://github.com/naver/pinpoint/releases/tag/1.6.2`
 - `http://www.cnblogs.com/yyhh/p/6106472.html`
 
-
-- pinpoint-collector-1.6.2
+### pinpoint-collector-1.6.2
 
  - 下载TOMCAT包，解压pinpoint-collector.war
  - `unzip pinpoint-collector-1.6.2.war -d ROOT`
 
-- pinpoint-web-1.6.2
+### pinpoint-web-1.6.2
 
  - 编辑hbase配置文件: `vi /data/web/tomcat8-pinpoint-web/webapps/ROOT/WEB-INF/classes/hbase.properties`
 
@@ -67,7 +65,7 @@ JAVA_HOME="/data/packages/jdk1.8.0_60"
   hbase.client.port=2181
 ```
 
-- pinpoint agent
+### pinpoint agent
  - 编辑配置文件: `vi /data/pinpoint-agent/pinpoint.config`
  - `profiler.collector.ip=172.16.51.7`
 
