@@ -21,12 +21,12 @@
 - install hbase
 
  - 指定JDK路径:
-``` bash
-vi hbase-config.sh +27
+ - 
+`vi hbase-config.sh +27
 JAVA_HOME="/data/packages/jdk1.8.0_60"
 ./start-hbase.sh
-```
- - hbase默认TcpPort:16010 
+`
+    - hbase默认TcpPort:16010 
 
 
 ## import tables
