@@ -58,7 +58,7 @@ JAVA_HOME="/data/packages/jdk1.8.0_60"
 
 ### pinpoint-web-1.6.2
 
- - 编辑hbase配置文件: `vi /data/web/tomcat8-pinpoint-web/webapps/ROOT/WEB-INF/classes/hbase.properties`
+ - 编辑配置文件: `vi /data/web/tomcat8-pinpoint-web/webapps/ROOT/WEB-INF/classes/hbase.properties`
 
 ``` bash
   hbase.client.host=localhost
