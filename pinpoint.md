@@ -21,12 +21,12 @@
 - install hbase
 
  - 指定JDK路径:
- - 
+ ``` bash
 `vi hbase-config.sh +27
 JAVA_HOME="/data/packages/jdk1.8.0_60"
 ./start-hbase.sh
-`
-    - hbase默认TcpPort:16010 
+```
+     - hbase默认TcpPort:16010 
 
 
 ## import tables
@@ -42,10 +42,8 @@ JAVA_HOME="/data/packages/jdk1.8.0_60"
 
 ## Hbase表优化
 - 修改hbase表的存储时间，建表的默认TTL时间比较长，需要比较大的磁盘空间，我们可以修改一下 默认的TTL时间
-
-- 修改的脚本地址为：alterTable7Days.hbase，然后复制脚本内容，粘贴执行。执行完之后可以查看表信息，`describe 'AgentInfo'`
-
-- 可以看到 TTL => '604800 SECONDS (7 DAYS)。
+修改的脚本地址为：alterTable7Days.hbase，然后复制脚本内容，粘贴执行。执行完之后可以查看表信息，`describe 'AgentInfo'`
+可以看到 TTL => '604800 SECONDS (7 DAYS)。
 
 
 ## pinpoint
