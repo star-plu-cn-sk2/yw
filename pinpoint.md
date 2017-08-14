@@ -25,9 +25,6 @@ vi hbase-config.sh +27
 JAVA_HOME="/data/packages/jdk1.8.0_60"
 ./start-hbase.sh
 ```
-  - hbase Port:16010 
-
-
 ## Import tables
 
 - hbase-create.hbase #从官网获取
