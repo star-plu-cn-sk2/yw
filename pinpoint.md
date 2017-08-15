@@ -28,6 +28,7 @@ JAVA_HOME="/data/packages/jdk1.8.0_60"
 ## Import tables
 
 - hbase-create.hbase #从官网获取
+- 获取地址：<https://github.com/naver/pinpoint/blob/1.6.x/hbase/scripts/hbase-create.hbase>
 
  - `/data/packages/hbase-1.1.11/bin`
 
